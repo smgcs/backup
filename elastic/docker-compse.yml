@@ -1,0 +1,17 @@
+docker:
+  image: stonejack/elastic
+  container_name: "elasticsearch"  
+  restart: always
+  net: host
+  ports:
+    - 9200:9200
+    - 9300:9300
+  volumes:
+    - /opt/info/es/data:/opt/info/es/data
+    - /opt/info/es/logs:/opt/info/es/logs
+    - /opt/info/es/config/elasticsearch.yml:/opt/elasticsearch/config/elasticsearch.yml
+    - /etc/localtime:/etc/localtime:ro
+  environment:
+      - MULTICAST=false
+      - ES_HEAP_SIZE=20g
+      - TERM=xterm

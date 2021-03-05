@@ -1,0 +1,86 @@
+{
+    "workbench.colorCustomizations": {
+        "editorLineNumber.foreground": "#c0b98f",
+        "editorGutter.background": "#1a2935",
+        "editorCursor.foreground": "#427ab6",
+    },
+    "window.zoomLevel": 1,
+    "explorer.confirmDragAndDrop": false,
+    "[markdown]": {},
+    "explorer.confirmDelete": false,
+    "editor.fontSize": 16,
+    "go.gopath": "/Users/sp.dong/go",
+    "go.goroot": "/usr/local/go",
+    "go.formatTool": "gofmt",
+    "vim.neovimPath": "/usr/local/bin/vim",
+    // "vim.easymotion": true,
+    "editor.lineNumbers":"relative",
+    "editor.minimap.enabled": false,
+    "diffEditor.renderSideBySide": true,
+    "git.autofetch": false,
+    "editor.fontFamily": "Source Code Pro for Powerline, FontAwesome",
+    "editor.wordWrap": "on",
+    "editor.lineHeight": 20,
+    //"workbench.editor.enablePreview": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "[go]": {
+        "editor.snippetSuggestions": "none",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "gopls": {
+        "usePlaceholders": true, // add parameter placeholders when completing a function
+        "wantCompletionDocumentation": true // for documentation in completion items
+    },
+    "files.eol": "\n", // formatting only supports LF line endings
+    "launch":{
+        // 使用 IntelliSense 了解相关属性。 
+        // 悬停以查看现有属性的描述。
+        // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Launch",
+                "type": "go",
+                "request": "launch",
+                "mode": "debug",
+                "remotePath": "",
+                "port": 2345,
+                "host": "127.0.0.1",
+                "program": "${fileDirname}",
+                "env": {
+                    "GOPATH":"/Users/sp.dong/go"
+                },
+                "args": [],
+                "showLog": true
+            }
+        ]
+    },
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "breadcrumbs.enabled": true,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": true,
+    "workbench.activityBar.visible": true,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideActivityBar": false,
+    "go.docsTool": "guru",
+    "go.gocodeAutoBuild": true,
+    "go.lintTool": "golangci-lint",
+    "go.useLanguageServer": true,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "gitlens.gitCommands.closeOnFocusOut": true,
+    "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.advanced.messages": {
+        "suppressLineUncommittedWarning": true
+    },
+    "http.proxy": "http://10.1.226.203:7777",
+    "workbench.colorTheme": "Xcode Partial (Dark)"
+}
